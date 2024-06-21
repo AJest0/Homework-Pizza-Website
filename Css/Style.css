@@ -1,316 +1,176 @@
+/* Genel stiller */
 html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-*{
     margin: 0;
     padding: 0;
+}
+
+* {
     box-sizing: border-box;
 }
 
+/* Container */
 .container {
     background-image: url(2.png);
+    background-size: cover; /* background-size düzeltilmesi */
     height: 100vh;
-    background-size: 100% 100%
+    padding: 20px; /* Mobil uyumlu padding */
 }
 
-.container .navbar{
-    background-color: rgba(0,0,0,0.8);
-    width: 100%;
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-.navbar .logo{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px;
+.navbar .logo {
     width: 40px;
 }
 
-.navbar .logo a{
+.navbar .logo a {
     text-decoration: none;
-    font-size: 30px;
-    font-family: sans-serif;
+    font-size: 24px; /* Mobil uyumlu font-size */
     color: white;
 }
 
-.navbar ul{
-    float: right;
-    margin-right: 20px;
-  
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
+.navbar ul li {
     margin: 0 8px;
     line-height: 80px;
-}  
-
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 6px 13px;
 }
 
-.navbar ul li a:active,
-.navbar ul li a:hover{
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Mobil uyumlu font-size */
+    padding: 6px 12px; /* Düzeltme: padding değerleri */
+}
+
+.navbar ul li a:hover {
     background-color: chocolate;
     border-radius: 20px;
 }
 
-.container .center{
+/* Center */
+.center {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Düzeltme: text-align */
+    width: 100%; /* Mobil uyumlu genişlik */
+    padding: 0 20px; /* Mobil uyumlu padding */
 }
 
-.center button{
-    background-color: rgba(0,0,0,0.8);
+.center button {
+    background-color: rgba(0, 0, 0, 0.8);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 20px;
-    font-family: sans-serif;
+    font-size: 18px; /* Mobil uyumlu font-size */
     color: white;
     cursor: pointer;
-    
-
-}
- 
-.center button:hover{
- background-color: chocolate;
-    border-radius: 20px;
+    margin-top: 20px; /* Mobil uyumlu margin */
 }
 
-.baslik h1{
-    font-size: 50px;
-    margin-top: 50px;
-    margin-left: 20px;
-    margin-bottom: -20px;
-    font-family: sans-serif;
+.center button:hover {
+    background-color: chocolate;
 }
 
-.section-2{
+/* Başlık */
+.baslik h1 {
+    font-size: 36px; /* Mobil uyumlu font-size */
+    margin: 20px 0; /* Mobil uyumlu margin */
+}
+
+/* Section 2 (varsayalım) */
+.section-2 {
     display: flex;
+    flex-wrap: wrap; /* Düzeltme: mobilde sarma */
     justify-content: space-around;
-    margin: 100px 0;
+    margin: 50px 0; /* Mobil uyumlu margin */
 }
 
-.card
-{
-    width: 20%;
-    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
-    border-radius: 14px;
-    border: 1px solid rgba(0,0,0,0.2);
-    overflow: hidden;
+.section-2 .card {
+    width: 45%; /* Mobil uyumlu genişlik */
+    margin-bottom: 20px; /* Mobil uyumlu margin */
 }
 
-.card :hover{
-    opacity: 0.7;
-}
-
-.A{
-    padding: 0px 20px;
-
-}
-.A p{
-    margin: 20px 0;
-    font-size: 20px;
-}
-
-img{
-    border-radius: 6px 6px 0 0 ;
+.section-2 .card img {
     width: 100%;
+    border-radius: 6px; /* Düzeltme: mobilde düzgün köşeler */
 }
 
-#section-3{
-    display: flex;
-    justify-content: space-around;
-    margin: 100px 0;
-}
-
-.section-4{
-    display: flex;
-    justify-content: space-around;
-    margin: 100px 0;
-}
-
-.card
-{
-    width:17%;
-    box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
-}
-
-.card :hover{
-    opacity: 0.7;
-}
-
-.B img{
-
-    width: 65%;
-   margin-left: 50px;
-}
-
-.A{
-    padding: 0px 20px;
-
-}
-.A p{
-    margin: 20px 0;
-    font-size: 20px;
-}
-
-img{
-    border-radius: 6px 6px 0 0 ;
-    width: 100%;
-}
-
-
-
-footer{
+/* Footer */
+footer {
     text-align: center;
-    font-size: 17px;
-    font-family: Arial;
+    font-size: 14px; /* Mobil uyumlu font-size */
     color: white;
     background-color: black;
     padding: 12px 0;
-
 }
 
-.footer ul{
-
-    text-align: left;
-
+.footer ul {
+    padding: 0;
 }
 
-.footer ul li{
-    list-style: none;
+.footer ul li {
     display: inline-block;
-    padding: 5px 20px;
+    padding: 0 10px; /* Düzeltme: padding */
 }
 
-.footer ul li a{
+.footer ul li a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 14px; /* Mobil uyumlu font-size */
 }
 
+/* Login form (varsayalım) */
 .login {
-    margin: 300px; 
-    padding: 20px; 
-    text-align: center  ;
-    position: absolute ;
-    top: 0;
-    left: 21%;
-
-
-}
-
-
-.login .loginn h1{
-    margin-left: 120px;
-    font-family: sans-serif;
-    font-size: 35px;
-    color: white;
-}
-
-.login .loginn input{
-    display: block;
-    width: 150%;
-    padding: 0 16px;
-    height: 45px;
-    box-sizing: border-box;
-    border: none;
-}
-
-
-
-.text{
-     margin: 20px 0;
-    border-radius: 8px;
-}
-
-.gırıs{
-    margin-top: 60px;
-    margin-bottom: 40px;
-    background-color: chocolate;
-    color: white;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: 0,8s;
-    display: block;
-}
-.login a{
-    color: white;
-    margin-left: 100px;
-    text-decoration: none;
-    display: block;
-}
-
- .gırıs:hover{
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-
-}
-
-.login .remember{
-    display:flex;
-    justify-content: space-between;
-    font-family: sans-serif;
-    margin: 10px 15px;
-    color: white;
-}
-.remember label input{
-    accent-color: white;
-    margin-right: 3px;
-
-
-}
-.remember a{
-color: white;
-text-decoration: none;
-font-family: sans-serif;
-}
-.remember a:hover{
-    text-decoration: underline;
-}
-
-.login button{
-    background: white;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    width: 150%;
-    height: 45px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+    margin: 20px auto; /* Mobil uyumlu margin */
+    padding: 20px;
     text-align: center;
+    position: relative; /* Düzeltme: absolute -> relative */
+    width: 80%; /* Mobil uyumlu genişlik */
 }
 
-.login .register{
-    font-size: 15px;
-    text-align: center;
-    margin-top: 20px;
-    color: white;
+.login .loginn h1 {
+    font-size: 24px; /* Mobil uyumlu font-size */
+    margin: 10px 0; /* Mobil uyumlu margin */
 }
 
-.register p a{
+.login .loginn input {
+    width: 100%; /* Düzeltme: mobilde tam genişlik */
+    padding: 10px; /* Mobil uyumlu padding */
+    margin-bottom: 10px; /* Mobil uyumlu margin */
+}
+
+.login button {
+    width: 100%; /* Düzeltme: mobilde tam genişlik */
+    margin-top: 10px; /* Mobil uyumlu margin */
+}
+
+.login .register p {
+    font-size: 14px; /* Mobil uyumlu font-size */
+    margin-top: 10px; /* Mobil uyumlu margin */
+}
+
+.register p a {
     color: white;
     text-decoration: none;
     font-weight: 400;
 }
 
-.register p a:hover{
+.register p a:hover {
     text-decoration: underline;
 }
-
-
-
