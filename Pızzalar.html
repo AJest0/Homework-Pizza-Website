@@ -1,0 +1,124 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzalar</title>
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#go-to-menu-btn').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('#menu-section').offset().top
+                }, 1000); // 1000 milliseconds = 1 second
+            });
+        });
+    </script>
+
+    <section class="section-1">
+    <div class="container">
+      
+        <div class="navbar">
+         <div class="logo">
+            <a href="index.html"><img src="Ana Menu/1.png" alt=""></a>
+            
+            
+         </div>
+         
+         <ul>
+           <li><a href="Menuler.html" class="active">Menü</a></li>
+            <li><a href="Pızzalar.html">Pizzalar</a></li>
+            <li><a href="Icecekler.html">İçecekler</a></li>
+            <li><a href="Logın.html">Giriş Yap</a></li>
+        </ul>
+     
+           </div>
+        
+           <div class="center">
+         <div id="go-to-menu-btn" class="button">
+                <button>Menülere Gitmek İçin Tıklayın</button>
+            </div>
+        
+        </div>
+    </section>
+
+        
+    
+    </div>
+
+    <section id="menu-section" class="section-2">
+        <div class="card">
+            <img src="Pızzalar/Karışık.jpg" alt="">
+            <div class="A">
+                <h1>Karışık Pizza</h1>
+                <p>Pizza Sosu, Mozzerella, Sucuk, Sosis, Siyah Zeytin, Yeşil Biber, Mısır</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Pızzalar/Et Sever.jpg" alt="">
+            <div class="A">
+                <h1>Et Sever Pizza</h1>
+                <p>Pizza Sosu, Mozzerella, Sucuk, Sosis, Salam, Kuru Domates, Kırmızı Biber</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Pızzalar/Ton Ton.jpg" alt="">
+            <div class="A">
+                <h1>Ton Ton Pizza</h1>
+                <p>Pizza Sosu, Mozzerella, Ton Balığı, Soğan, Mısır, Domates</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section-3">
+        <div class="card">
+            <img src="Pızzalar/Margherita.jpg" alt="">
+            <div class="A">
+                <h1>Margherita Pizza</h1>
+                <p>Pizza Sosu, Mozzerella Peyniri</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Pızzalar/4 peynirli.jpg" alt="">
+            <div class="A">
+                <h1>4 Peynirli Pizza</h1>
+                <p>Pizza Sosu, Mozzerella, Beyaz Peynir, Hellim Peyniri, Chedar</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Pızzalar/Sebzeli.jpg" alt="">
+            <div class="A">
+                <h1>Sebzeli Pizza</h1>
+                <p>Pizza Sosu, Mozzerella, Mantar, Domates, Roka</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        Powered by Seyyid Keskin
+        <ul>
+            <li><a href="https://www.instagram.com/s.y_y.d/" target="_blank">İnstagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100014044472794/" target="_blank">Facebook</a></li>
+           </ul>
+    </footer>
+       
+        
+
+
+
+      
+    
+
+
+
+
+</body>
+</html>

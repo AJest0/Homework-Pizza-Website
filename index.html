@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Menü</title>
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#go-to-menu-btn').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('#menu-section').offset().top
+                }, 1000); // 1000 milliseconds = 1 second
+            });
+        });
+    </script>
+
+
+
+    <section class="section-1">
+    <div class="container">    
+        <div class="navbar">
+         <div class="logo">
+            <a href="index.html"><img src="Ana Menu/1.png" alt=""></a>  
+         </div>
+         
+         <ul>
+           <li><a href="Menuler.html" class="active">Menü</a></li>
+            <li><a href="Pızzalar.html">Pizzalar</a></li>
+            <li><a href="Icecekler.html">İçecekler</a></li>
+            <li><a href="Logın.html">Giriş Yap</a></li>
+          
+            
+        </ul>
+     
+           </div>
+        
+           <div class="center">
+         <div id="go-to-menu-btn" class="button">
+                <button>Menülere Gitmek İçin Tıklayın</button>
+            </div>
+        
+        </div>
+    </section>
+
+        
+    <div class="baslik">
+
+        <h1>Kampanyalar</h1>
+    </div>  
+    </div>
+
+
+    <section id="menu-section" class="section-2">
+
+        <div class="card">
+            <img src="Ana Menu/2o+2d.jpg" alt="">
+            <div class="A">
+                <h1>Avantajlı Algida Menüsü</h1>
+                <p>Seçeceğiniz 2 Adet Orta Boy Pizza + 2 Adet Algida Dondurma</p>
+                <p>300 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Ana Menu/2o+2d+1k.jpg" alt="">
+            <div class="A">
+                <h1>Algida Menüsü</h1>
+                <p>Seçeceğiniz 2 Adet Orta Boy Pizza + 2 Adet Algida Dondurma + 1 L. Pepsi</p>
+                <p>320 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Ana Menu/2o+1k+2c.jpg" alt="">
+            <div class="A">
+                <h1>Futboll Menü.</h1>
+                <p>Seçeceğiniz 2 Adet Büyük Boy Pizza + 2 Adet Ruffles Cips + 1 L. Pepsi</p>
+                <p>460 TL</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section-3">
+        <div class="card">
+            <img src="Ana Menu/1o+1k+1s.jpg" alt="">
+            <div class="A">
+                <h1>Tatlı Menü.</h1>
+                <p>Seçeceğiniz 1 Adet Orta Boy Pizza + 1 Adeet Sufle + 1 L. Pepsi</p>
+                <p>230 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Ana Menu/1b+1c+k.jpg" alt="">
+            <div class="A">
+                <h1>Cips Menü</h1>
+                <p>Seçeceğiniz 1 Adet Orta Boy Pizza + 1 Adet Ruffles Cips + 1 L. Pepsi</p>
+                <p>260 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Ana Menu/2o+1k+1t+1p.jpg" alt="">
+            <div class="A">
+                <h1>Bomba Menü</h1>
+                <p> 2 Adet Orta Boy Pizza + Patates + Çıtır Tavuk Topları + 1 L. Pepsi></p>
+                <p>360 TL   </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        Powered by Seyyid Keskin
+        <ul>
+            <li><a href="https://www.instagram.com/s.y_y.d/" target="_blank">İnstagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100014044472794/" target="_blank">Facebook</a></li>
+           </ul>
+    </footer>
+       
+        
+
+
+
+      
+    
+
+ 
+
+
+
+</body>
+</html>

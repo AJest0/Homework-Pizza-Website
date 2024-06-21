@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menüler</title>
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#go-to-menu-btn').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('#menu-section').offset().top
+                }, 1000); // 1000 milliseconds = 1 second
+            });
+        });
+    </script>
+
+    <section class="section-1">
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="Ana Menu/1.png" alt=""></a>
+
+
+                </div>
+
+                <ul>
+                    <li><a href="Menuler.html" class="active">Menü</a></li>
+                    <li><a href="Pızzalar.html">Pizzalar</a></li>
+                    <li><a href="Icecekler.html">İçecekler</a></li>
+                    <li><a href="Logın.html">Giriş Yap</a></li>
+                </ul>
+
+            </div>
+
+            <div class="center">
+                <div id="go-to-menu-btn" class="button">
+                    <button>Menülere Gitmek İçin Tıklayın</button>
+                </div>
+
+            </div>
+    </section>
+
+
+
+    </div>
+
+    <section id="menu-section" class="section-2">
+        <div class="card">
+            <img src="Menu/Kucuk Boy Pızza.jpg" alt="">
+            <div class="A">
+                <h1>Küçük Boy Pizza Menü</h1>
+                <p>Seçeceğiniz Küçük Boy Pizza + Patates Kızartması + Kutu İçecek</p>
+                <p>180 TL</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Menu/Karışık Pizza Menü.png" alt="">
+            <div class="A">
+                <h1>Orta Boy Menü</h1>
+                <p>Seçeceğiniz Orta Boy Pizza + Patates Kızartması + Kutu İçecek</p>
+                <p>215 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Menu/Büyük Boy Pizza Menü.jpg" alt="">
+            <div class="A">
+                <h1>Büyük Boy Pizza Menü</h1>
+                <p>Seçeceğiniz Büyük Boy Pizza + Patates Kızartması + Coca Cola (1 L.)</p>
+                <p>285 TL</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section-3">
+        <div class="card">
+            <img src="Menu/Büyük Boy Pızza.jpg" alt="">
+            <div class="A">
+                <h1>2 Büyük Boy Pizza Menü</h1>
+                <p>Seçeceğiniz 2 Adet Büyük Boy Pizza + Coca Cola (2.5 L.)</p>
+                <p>480 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Menu/2 ORTA BOY PİZZA MENÜ.jpg" alt="">
+            <div class="A">
+                <h1>2 Orta Boy Pizza Menü</h1>
+                <p>Seçeceğiniz 2 Orta Boy Pizza + Patates Kızartması + Coca Cola (1.5 L.)</p>
+                <p>400 TL</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Menu/3 BÜYÜK.jpg" alt="">
+            <div class="A">
+                <h1>3 Büyük Boy Pizza Menü</h1>
+                <p>Seçeceğiniz 3 Büyük Boy Pizza + Patates Kızartması + Tavuk + Coca Cola (2.5 L.)</p>
+                <P>600 TL</P>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        Powered by Seyyid Keskin
+        <ul>
+            <li><a href="https://www.instagram.com/s.y_y.d/" target="_blank">İnstagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100014044472794/" target="_blank">Facebook</a></li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
